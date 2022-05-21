@@ -1,0 +1,11 @@
+ul{
+    list-style: none;
+}
+aside > .lista > li {
+    cursor: pointer;
+}
+
+aside > .lista > li:hover {
+    font-size: 18px;
+    background: #f0f0f0;
+}

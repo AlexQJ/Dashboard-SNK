@@ -1,0 +1,11 @@
+{
+  "name": "dashboard-snk",
+  "version": "1.0.0",
+  "description": "aplicacion dashboard para proyecto de ucamp semana 14",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alejandro Quiñonez",
+  "license": "ISC"
+}
