@@ -10,7 +10,7 @@
 
 #### Estamos trabajando en resolver ese conflicto
 <img src="/assets/img/error-ruta.jpeg" width=600>
-<img src="/assets/img/desbloqueo.jpeg" width=400>
+<img src="/assets/img/desbloqueo.jpeg">
 
 ## Instrucciones de uso de la APP
         Te encontrarás con un listado de titanes y una gráfica mostrando las alturas de los titanes
