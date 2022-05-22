@@ -1,6 +1,6 @@
 # Dashboard-SNK
 ### Dashboard utilizando API de attack on titan para Proyecto 3 ucamp
-
+#### Link: [DEMO](https://alexqj.github.io/Dashboard-snk/)
 ## Importante
 ### La API cuenta con un bloqueo de CORS, si no puedes visualizar correctamente la aplicación intenta lo siguiente:
         Presiona F12 y dirigete a los errores de consola
