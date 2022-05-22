@@ -4,10 +4,10 @@ body {
 .navbar {
     justify-content: space-between;
 }
-
-.navbar img{
-    max-width: 100px;
+.logo img {
+    width: 200px;
 }
+
 
 .navbar .user{
     border-radius: 50%;
@@ -22,11 +22,15 @@ body {
 }
 
 .navbar .user img{
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+    overflow: hidden;
+    vertical-align: top;
 }
 
 /* Lista de titanes */
@@ -86,9 +90,15 @@ aside ul li:hover {
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
     padding: 5px 10px;
+    background-color: #555;
 }
 
 .container-stats .stats h3{
+    text-align: center;
+}
+
+#altura,
+#tipo {
     text-align: center;
 }
 
