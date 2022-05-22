@@ -6,6 +6,7 @@
         Presiona F12 y dirigete a los errores de consola
         Presiona en el error 403 el enlace cors-anywhere.heroku...
         Presiona Request temporary acces to the demo server.
+        Refresca la página de la APP y deberia funcionar correctamente.
 
 #### Estamos trabajando en resolver ese conflicto
 
