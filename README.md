@@ -12,4 +12,5 @@
 ## Instrucciones de uso de la APP
         Te encontrarás con un listado de titanes y una gráfica mostrando las alturas de los titanes
         Podras elegir ver la información de cada titan dando clic en su nombre
-        En la gráfica podrás elegir el tipo de esta, actualmente cuenta con gráfica de barras, pastel, linear y radar
+        En la gráfica podrás elegir el tipo de esta.
+        Actualmente cuenta con gráfica de barras, pastel, linear y radar
