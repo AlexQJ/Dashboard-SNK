@@ -1,11 +1,108 @@
-ul{
-    list-style: none;
+body {
+    color: #fff;
 }
-aside > .lista > li {
+.navbar {
+    justify-content: space-between;
+}
+
+.navbar img{
+    max-width: 100px;
+}
+
+.navbar .user{
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    overflow: hidden;
+
+    width: 100px;
+    height: 100px;
+}
+
+.navbar .user img{
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+/* Lista de titanes */
+
+section.container.main{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+}
+
+section.container.main aside {
+    width: 22%;
+}
+
+section.container.main main {
+    width: 78%;
+}
+
+aside ul {
+    display: flex;
+    align-items: center;
+}
+aside ul li{
+    background-color: rgb(44, 44, 44);
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    border-bottom: 1px solid #555;
     cursor: pointer;
 }
 
-aside > .lista > li:hover {
-    font-size: 18px;
-    background: #f0f0f0;
+aside ul li:hover {
+    background-color: rgb(90, 90, 90);
+}
+
+
+/* Contenedor de estadisticas */
+
+.container-stats{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.container-stats .stats{
+    width: 25%;
+    border: 1px solid #333;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.container-stats .stats h3{
+    text-align: center;
+}
+
+.notRendered{
+    display: none;
+}
+
+.graph {
+    padding: 10px;
+    border-radius: 6px;
+    background-color: rgb(218, 218, 218);
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.graph label{
+    color: #000;
 }

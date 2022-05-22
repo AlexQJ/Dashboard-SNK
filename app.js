@@ -5,6 +5,7 @@ const listaPortadores = [];
 const tipos = [];
 const listaHabilidades = [];
 const imgPathLista = [];
+
 const obtenerTitanes = async () => {
     const corsAnywhere = 'https://cors-anywhere.herokuapp.com/';
     const url = 'https://attack-on-titan-server.herokuapp.com/titans?limit=20&page=1';
@@ -156,6 +157,10 @@ function renderStats(i){
     // mostrar portadores
     personaje.addEventListener('click', obtenerPortadores())
 
+    //mostrar titulo alturas
+    const heigthTitle = document.querySelector('#titan_heigth_title')
+    heigthTitle.textContent = "Heigth"
+
     //mostrar titulo tipo
     const typeTitle = document.querySelector('#titan_type_title')
     typeTitle.textContent = "Titan Type"
@@ -165,6 +170,12 @@ function renderStats(i){
 
     // mostrar tipo
     personaje.addEventListener('click', obtenerTipo())
+
+    // mostrar altura
+    personaje.addEventListener('click', obtenerAltura())
+
+    // confirmar si el elemento esta renderizado
+    personaje.addEventListener('click', intercambiarClase())
 
 
     function obtenerHabilidades(){
@@ -181,6 +192,11 @@ function renderStats(i){
         listaPortadores[i].forEach(portador => contenedorPortadores.innerHTML += `<li>${portador}</li>`);
     }
 
+    function obtenerAltura(){
+        const contenedorAltura = document.getElementById('altura');
+        contenedorAltura.innerHTML = `<p>${alturas[i]} mts</p>`;
+    }
+
     function obtenerTipo(){
         const contenedorTipo = document.getElementById('tipo');
         contenedorTipo.innerHTML = `<p>${tipos[i]}</p>`;
@@ -190,6 +206,16 @@ function renderStats(i){
         const thumbContainer = document.querySelector('#thumb');
         thumbContainer.innerHTML = `<img src="https://attack-on-titan-server.herokuapp.com/${imgPathLista[i]}" alt="imagen del titan ${nombres[i]}" width="100%">`
     }
+
+    rendered = true
 }
+
+function intercambiarClase(){
+    let stats = document.querySelector('.notRendered');
+    if(stats){
+        stats.style.display = "flex";
+    }
+}
+
 obtenerTitanes();
 

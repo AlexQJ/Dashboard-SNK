@@ -11,9 +11,12 @@
     <link rel="stylesheet" href="style.css">
     <title>Attack On Titans Dashboard</title>
 </head>
-<body>
-    <section class="container"><!-- Contenedor Principal -->
-        <nav class="nav">                      <!-- Navegacion -->
+<body class="bg-dark">
+    <section class="container menu"><!-- Contenedor Principal -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">  
+            <div class="logo">
+                <img src="./assets/img/Attack-on-Titan-Logo.png" alt="logo">
+            </div>                    <!-- Navegacion -->
             <div class="title">
                 <h1>Attack on Titans Dashboard</h1>
             </div>
@@ -21,34 +24,43 @@
                 <img src="./assets/img/perfil.jpg" alt="perfil">
             </div>
         </nav>
-        <section class="container">            <!-- Contenedor lista - Stats - Grafica -->
+        <section class="container main">            <!-- Contenedor lista - Stats - Grafica -->
             <aside class="container lista">    <!-- Lista de titanes -->
-                <ul class="lista" id="lista"></ul>
+                <ul class="nav flex-column titanes" id="lista"></ul>
             </aside>
             <main class="container info_graph">           <!-- Contenedor de toda la info -->
                 <div class="container title"> <h2 id="titan_stat_title">Titans - Stats</h2></div> <!-- Contenedor Seccion -->
-                <div class="container stats">                               <!-- Contenedor Stats -->
-                    <div class="habilidades">                                       <!-- stat - habilidades -->
+                <div class="container-stats notRendered">                               <!-- Contenedor Stats -->
+                    <div class="stats habilidades">                                   <!-- stat - habilidades -->
                         <h3 id="titan_habilities_title"></h3>
                         <ul id="habilidades"></ul>
                     </div>                
-                    <div class="portadores">                                        <!-- stat - portadores -->
+                    <div class="stats portadores">                                    <!-- stat - portadores -->
                         <h3 id="titan_inheritors_title"></h3>                                     
                         <ul id="portadores"></ul>
-                    </div>                 
-                    <div class="tipo">                                              <!-- stat - tipo -->
+                    </div>
+                    <div class="stats altura">                                        <!-- stat - portadores -->
+                        <h3 id="titan_heigth_title"></h3>                                     
+                        <div id="altura"></div>
+                    </div>                  
+                    <div class="stats tipo">                                          <!-- stat - tipo -->
                         <h3 id="titan_type_title"></h3>
-                        <div class="thumb" id="thumb" width="30%">
-                        </div>
                         <div id="tipo"></div>
+                        <div class="thumb" id="thumb">
+                        </div>
                     </div>                              
                 </div>
-                <div class="content" width="100%">
-                    <select name="seleccionGrafica" id="seleccion">
-                        <option value="bar" selected>Bars</option>
-                        <option value="pie">Pie</option>
-                        <option value="radar">Radar</option>
-                    </select>                           <!-- Contenedor grafica -->
+                <div class="content graph" width="100%">
+                    <div class="input-graph">
+                        <label for="seleccion">Selecciona el tipo de gráfica</label>
+                        <select name="seleccion" id="seleccion">
+                            <option value="bar" selected>Bars</option>
+                            <option value="pie">Pie</option>
+                            <option value="line">Line</option>
+                            <option value="radar">Radar</option>
+                        </select> 
+                    </div>
+                                              <!-- Contenedor grafica -->
                     <div class="canvas">
                         <canvas id="myChart" width="100%"></canvas>                      <!-- Grafica -->
                     </div>
