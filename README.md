@@ -9,9 +9,14 @@
         Refresca la página de la APP y deberia funcionar correctamente.
 
 #### Estamos trabajando en resolver ese conflicto
+<img src="/assets/img/error-ruta.jpeg" width=600>
+<img src="/assets/img/desbloqueo.jpeg" width=600>
 
 ## Instrucciones de uso de la APP
         Te encontrarás con un listado de titanes y una gráfica mostrando las alturas de los titanes
         Podras elegir ver la información de cada titan dando clic en su nombre
         En la gráfica podrás elegir el tipo de esta.
         Actualmente cuenta con gráfica de barras, pastel, linear y radar
+
+<img src="/assets/img/dashboard-app.PNG" width=600>
+<img src="/assets/img/Titans.PNG" width=600>
