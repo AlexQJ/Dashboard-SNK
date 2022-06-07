@@ -37,7 +37,6 @@ body {
 
 section.container.main{
     display: flex;
-    flex-wrap: nowrap;
     justify-content: space-between;
 
 }
@@ -130,4 +129,30 @@ aside ul li:hover {
 
 .graph label{
     color: #000;
+}
+
+footer {
+    margin: 15px auto 5px auto;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer a {
+    color: #da3999;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover{
+    color: #FD43B3;
+}
+
+.personal {
+    color: #22c2b5;
+}
+
+.personal:hover{
+    color: #27EFDD;
 }

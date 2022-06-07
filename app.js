@@ -5,6 +5,8 @@ const listaPortadores = [];
 const tipos = [];
 const listaHabilidades = [];
 const imgPathLista = [];
+const coloresFondo = ["#cb8225", "#137e4f", "#ae5000", "#f4cfb7", "#be1c1c", "#eabc04", "#be1c1c", "#f4cfb7", "#fff5ee", "#fff5ee", "#f4cfb7", "#f4cfb7", "#e43e3e", "#f4cfb7"];
+const coloresBorde = ["#be1c1c", "#000000", "#e5b513", "#7d9337", "#fff5ee", "#9aceeb", "#addec8", "#addec8", "#addec8", "#e43e3e", "#be1c1c", "#cb8225", "#fff5ee", "#f4cfb7"];
 
 const obtenerTitanes = async () => {
     const corsAnywhere = 'https://cors-anywhere.herokuapp.com/';
@@ -71,8 +73,9 @@ const setGraph = (data, seleccion) => {
       datasets: [
         {
           label: "Titans height",
-          backgroundColor: colors,
-          borderColor: colors,
+          backgroundColor: coloresFondo,
+          borderColor: coloresBorde,
+          borderWidth: 5,
           data: alturaTitanes,
         },
       ],
